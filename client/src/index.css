@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { font-family: system-ui, -apple-system, sans-serif; }
+  body { @apply bg-gray-50 text-gray-900; }
+}
+
+@layer components {
+  .btn { @apply inline-flex items-center justify-center px-4 py-2 rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1 disabled:opacity-50 disabled:cursor-not-allowed; }
+  .btn-primary { @apply btn bg-ecoa-600 text-white hover:bg-ecoa-700 focus:ring-ecoa-500; }
+  .btn-secondary { @apply btn bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 focus:ring-gray-300; }
+  .btn-danger { @apply btn bg-red-600 text-white hover:bg-red-700 focus:ring-red-500; }
+  .btn-sm { @apply px-3 py-1.5 text-sm; }
+
+  .input { @apply w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ecoa-500 focus:border-transparent; }
+  .label { @apply block text-sm font-medium text-gray-700 mb-1; }
+
+  .card { @apply bg-white rounded-xl shadow-sm border border-gray-100 p-4; }
+  .badge { @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium; }
+  .semaforo-verde { @apply badge bg-green-100 text-green-800; }
+  .semaforo-amarillo { @apply badge bg-yellow-100 text-yellow-800; }
+  .semaforo-rojo { @apply badge bg-red-100 text-red-800; }
+  .semaforo-gris { @apply badge bg-gray-100 text-gray-600; }
+
+  .alert-1er { @apply bg-yellow-50 border-l-4 border-yellow-400; }
+  .alert-2do { @apply bg-orange-50 border-l-4 border-orange-400; }
+  .alert-formal { @apply bg-red-50 border-l-4 border-red-400; }
+  .alert-critico { @apply bg-red-100 border-l-4 border-red-700; }
+}
