@@ -266,6 +266,22 @@ async function initDB() {
       )
     `)
 
+    await client.query(`
+      CREATE TABLE IF NOT EXISTS app_settings (
+        key TEXT PRIMARY KEY,
+        value TEXT NOT NULL
+      )
+    `)
+
+    // Seed settings por defecto
+    await client.query(`
+      INSERT INTO app_settings (key, value) VALUES
+        ('due_day', '10'),
+        ('alert_interval_days', '5'),
+        ('whatsapp_recipients', '[]')
+      ON CONFLICT (key) DO NOTHING
+    `)
+
     // Seed: admin por defecto
     const existing = await client.query("SELECT id FROM users WHERE email = 'admin@ecoa.com'")
     if (existing.rows.length === 0) {

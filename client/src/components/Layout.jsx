@@ -14,6 +14,7 @@ const NAV_ITEMS = [
   { to: '/usuarios',         label: 'Usuarios',           icon: '⚙️',  adminOnly: true  },
   { to: '/comisiones',       label: 'Comisiones',         icon: '🏫', adminOnly: true  },
   { to: '/importar',         label: 'Importar Excel',     icon: '📥', adminOnly: true  },
+  { to: '/configuracion',    label: 'Configuración',      icon: '🔧', adminOnly: true  },
 ]
 
 export default function Layout({ children }) {

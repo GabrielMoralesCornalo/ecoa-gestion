@@ -17,6 +17,7 @@ import Usuarios from './pages/Usuarios'
 import CambiarPassword from './pages/CambiarPassword'
 import Importar from './pages/Importar'
 import Comisiones from './pages/Comisiones'
+import Configuracion from './pages/Configuracion'
 
 function AppRoutes() {
   const { user } = useAuth()
@@ -62,6 +63,9 @@ function AppRoutes() {
         } />
         <Route path="/comisiones"    element={
           <ProtectedRoute adminOnly><Comisiones /></ProtectedRoute>
+        } />
+        <Route path="/configuracion" element={
+          <ProtectedRoute adminOnly><Configuracion /></ProtectedRoute>
         } />
         <Route path="/login"         element={<Navigate to="/" replace />} />
         <Route path="*"              element={<Navigate to="/" replace />} />
