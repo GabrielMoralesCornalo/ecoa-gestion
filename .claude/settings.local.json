@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_in_Chrome__computer",
+      "PowerShell($env:PATH = \"C:\\\\Program Files\\\\nodejs;\" + $env:PATH; cd C:\\\\Users\\\\ASUS\\\\ecoa-gestion; git add package.json; git commit -m \"fix: install client devDependencies in build \\(--include=dev for vite\\)\"; git push origin main)",
+      "mcp__Claude_in_Chrome__navigate",
+      "Bash(export PATH=\"/mnt/c/Program Files/nodejs:$PATH\")",
+      "Read(//mnt/c/Users/ASUS/**)",
+      "Bash(npm install *)"
+    ]
+  }
+}

@@ -22,6 +22,7 @@ app.use('/api/audiencias',        require('./routes/audiencias'))
 app.use('/api/mediciones',        require('./routes/mediciones'))
 app.use('/api/cobranza',          require('./routes/cobranza'))
 app.use('/api/coaching-observado',require('./routes/coaching-observado'))
+app.use('/api/import',            require('./routes/import'))
 
 // Servir frontend en producción
 if (process.env.NODE_ENV === 'production') {
