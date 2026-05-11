@@ -12,6 +12,7 @@ const NAV_ITEMS = [
   { to: '/coaching',         label: 'Coaching Observado', icon: '🔍', adminOnly: false },
   { to: '/cobranza',         label: 'Cobranza',           icon: '💰', adminOnly: true  },
   { to: '/usuarios',         label: 'Usuarios',           icon: '⚙️',  adminOnly: true  },
+  { to: '/comisiones',       label: 'Comisiones',         icon: '🏫', adminOnly: true  },
   { to: '/importar',         label: 'Importar Excel',     icon: '📥', adminOnly: true  },
 ]
 
